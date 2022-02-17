@@ -4,14 +4,19 @@
  */
 package javaapplication1;
 
-import java.applet.Applet;
+import java.applet.*;
 import java.awt.*;
+import java.awt.event.*;
 
 /**
  *
  * @author Dhanur
  */
-public class NewApplet extends Applet {
+public class NewApplet1 extends Applet
+        implements ActionListener {
+
+    Image pic;
+    AudioClip play;
 
     /**
      * Initialization method that will be called after the applet is loaded into
@@ -19,20 +24,16 @@ public class NewApplet extends Applet {
      */
     public void init() {
         // TODO start asynchronous download of heavy resources
+        pic = getImage(getDocumentBase(), "ZOOM.JPG");
+        play = getAudioClip(getDocumentBase(), "Sound.wav");
     }
 
     public void paint(Graphics g) {
-        g.drawString("Welcome in Java Applet.", 40, 20);
-        showStatus("This is shown in the status window.");
-        /*g.drawLine(30,300,200,10);
-      g.drawRect(400,50,200,100);
-      g.drawOval(100-50,100-50,100,100);*/
-        g.drawRect(300, 150, 200, 100);
-        g.setColor(Color.yellow);
-        g.fillRect(300, 150, 200, 100);
-        g.setColor(Color.magenta);
-        g.drawString("Rectangle", 500, 150);
-        
+        g.drawImage(pic, 40, 50, this);
+        play.play();
+    }
+
+    public void actionPerformed(ActionEvent ae) {
     }
     // TODO overwrite start(), stop() and destroy() methods
 }
