@@ -5,7 +5,7 @@
 package javaapplication1;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.*;
 
 /**
  *
@@ -18,15 +18,11 @@ public class JavaApplication1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ArrayList<String> list = new ArrayList<String>();
-        list.add("Ravi");
-        list.add("Vijay");
-        list.add("Ravi");
-        list.add("Ajay");
-        Iterator itr = list.iterator();
-        while (itr.hasNext()) {
-            System.out.println(itr.next());
-        }
-
+        ArryClass ar = new ArryClass();
+        ar.str();
+        Linked ll = new Linked();
+        ll.listlink();
+        Stackk s = new Stackk();
+        s.stck();
     }
 }
