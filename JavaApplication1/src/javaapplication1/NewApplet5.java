@@ -20,10 +20,10 @@ public class NewApplet5 extends Applet implements Runnable {
     boolean animateFlag = true;
 
     public void init() {
-        whirlImages[0] = getImage(getDocumentBase(), "Picture1.gif");
-        whirlImages[1] = getImage(getDocumentBase(), "Picture2.gif");
-        whirlImages[2] = getImage(getDocumentBase(), "Picture3.gif");
-        whirlImages[3] = getImage(getDocumentBase(), "Picture4.gif");
+        whirlImages[0] = getImage(getDocumentBase(), "c1.jpg");
+        whirlImages[1] = getImage(getDocumentBase(), "c2.jpg");
+        whirlImages[2] = getImage(getDocumentBase(), "c3.jpg");
+        whirlImages[3] = getImage(getDocumentBase(), "c4.jpg");
     }
 
     public void start() {
