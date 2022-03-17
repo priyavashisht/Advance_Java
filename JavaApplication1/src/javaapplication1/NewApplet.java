@@ -27,12 +27,12 @@ public class NewApplet extends Applet {
         /*g.drawLine(30,300,200,10);
       g.drawRect(400,50,200,100);
       g.drawOval(100-50,100-50,100,100);*/
-        g.drawRect(300, 150, 200, 100);
+        g.drawRect(100, 150, 200, 100);
         g.setColor(Color.yellow);
         g.fillRect(300, 150, 200, 100);
         g.setColor(Color.magenta);
         g.drawString("Rectangle", 500, 150);
-        
+
     }
     // TODO overwrite start(), stop() and destroy() methods
 }
