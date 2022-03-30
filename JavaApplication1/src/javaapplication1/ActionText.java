@@ -61,5 +61,6 @@ public class ActionText extends Frame implements ActionListener {
     public static void main(String[] args) {
         new ActionText();
         windowClose w = new windowClose();
+
     }
 }
