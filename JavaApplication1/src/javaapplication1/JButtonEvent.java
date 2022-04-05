@@ -17,7 +17,7 @@ public class JButtonEvent {
         b.setBounds(50, 100, 95, 30);
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                tf.setText("Welcome to Javatpoint.");
+                tf.setText("JButton.");
             }
         });
         f.add(b);
